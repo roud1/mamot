@@ -4,19 +4,25 @@ body{
 
 .header{
     width: 100%;
-    max-width: 1180px;
+    max-width: 1212px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 56px;
     box-sizing: border-box;
     font-weight: 700;
 }
 
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #F7F7F7;
+}
+
 .wrap{
     width: 100%;
-    max-width: 1180px;
+    max-width: 1212px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -30,7 +36,7 @@ body{
 }
 
 .nav li{
-    margin-left: 15px;
+    margin-left: 37px;
 }
 
 .nav li a{
@@ -41,7 +47,7 @@ body{
 .nav_btn{
     background-color: #5528FF;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 6px 15px;
     color: white;
     border: none;
     font-weight: 700;
@@ -57,7 +63,7 @@ body{
     width: 58px;
     height: 58px;
     background-image: url('../img/logo.svg');
-    margin-right: 20px;
+    margin-right: 25px;
 }
 
 .logo_text{
@@ -66,29 +72,33 @@ body{
 }
 
 .title-main{
-    font-size: 56px;
+    font-size: 55px;
     color: #202020;
     font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 0.4em;
 }
 
 .text-main{
     font-size: 32px;
     line-height: 1.5;
     color: #4F4F4F;
+    max-width: 746px;
+    margin-bottom: 24px;
 }
 
 .button{
     background-color: #5528FF;
     border-radius: 10px;
-    padding: 10px 45px;
+    padding: 16px 59px;
     color: white;
     border: none;
     font-size: 24px;
 }
 
 .page{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 85px;
+    padding-bottom: 109px;
     position: relative;
 }
 .page-top{
@@ -107,8 +117,8 @@ body{
 
 .services{
     display: grid;
-    grid-template: 50% 50%/50% 50%;
-
+    grid-template: repeat(2, 1fr)/50% 50%;
+    grid-row-gap: 38px;
 }
 
 .services-item{
@@ -118,17 +128,19 @@ body{
 }
 
 .services_img{
-    flex-basis: 120px;
+    flex-basis: 165px;
     text-align: center;
 }
 
 .services_text{
-    flex-basis: calc(100% - 100px);
+    flex-basis: calc(80% - 165px);
 }
 
 .services h3{
     font-size: 28px;
     font-weight: 400;
+    margin-bottom: 17px;
+    margin-top: 0;
 }
 
 .services p{
@@ -139,6 +151,70 @@ body{
 
 .clients{
     display: grid;
-    grid-template: 120px 120px / repeat(4, 25%);
+    grid-template: repeat(2, 1fr) / repeat(4, 25%);
     text-align: center;
+    grid-row-gap: 44px;
+    padding-top: 0;
+}
+
+.team{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-row-gap: 51px;
+    padding-top: 20px;
+}
+
+.photo{
+    border-radius: 50%;
+    width: 100px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.team-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team-item img{
+    margin-right: 35px;
+}
+
+.team-item div{
+    flex-basis: calc(100% - 120px);
+}
+
+.social{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.social li{
+    margin-left: 40px;
+}
+
+.social li a{
+    text-decoration: none;
+    color: #B2B2B2;
+    font-size: 24px;
+}
+
+.box-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-item h3{
+    font-size: 28px;
+    color: #202020;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.team-item p{
+    font-size: 14px;
+    color: #B2B2B2;
 }
